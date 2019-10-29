@@ -5,8 +5,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content="javascript: void(0);">
 		
-		<title>Session 16</title>
-		<!-- به ادرس های اصلی لینک میریم -->
+		<title>Session 14</title>
+		
 		<link href="<?php echo $template_url; ?>css/font-awesome.min.css" rel="stylesheet">
 		<link href="<?php echo $template_url; ?>css/main.css" rel="stylesheet">
 		
@@ -17,31 +17,43 @@
 		
 	</head>
 	<body>
-    <div class="container">
-        <header>
-            <?php include ($template_url.'pages/header.php'); ?>
-            <div class="clearfix"></div>
-            <div class="row">
-            <?php include ($template_url.'pages/menu.php'); ?>
-            </div>
-        </header>
-<?php
-// اگر کاربرمثلا زد  cms/?m و یا  cms/?m=contact  برو به صفحه کانتکت
 
+		<div class="container">
+
+			<header>
+			
+				<?php include( $template_url.'pages/header.php' ); ?>
+				
+				<div class="clearfix"></div>
+				
+				<div class="row">
+				
+					<?php include( $template_url.'pages/menu.php' ); ?>
+				
+				</div>
+			
+			</header>
+
+<?php
 $page = 'default';
 if( isset( $_GET['m'] ) && $_GET['m'] == 'contact' ) $page = 'contact';
-if(isset($_GET['m'])&&$_GET['m']=='search')$page='search';
-if(isset($_GET['m'])&&$_GET['m']=='product')$page='product';
-if(isset($_GET['m'])&&$_GET['m']=='shop')$page='shop';
-if(isset($_GET['m'])&&$_GET['m']=='register')$page='register';
-if(isset($_GET['m'])&&$_GET['m']=='confirm')$page='confirm';
-if(isset($_GET['m'])&&$_GET['m']=='login')$page='login';
-// آأرس صفحه  contact
+if( isset( $_GET['m'] ) && $_GET['m'] == 'search' ) $page = 'search';
+if( isset( $_GET['m'] ) && $_GET['m'] == 'product' ) $page = 'product';
+if( isset( $_GET['m'] ) && $_GET['m'] == 'shop' ) $page = 'shop';
+if( isset( $_GET['m'] ) && $_GET['m'] == 'register' ) $page = 'register';
+if( isset( $_GET['m'] ) && $_GET['m'] == 'confirm' ) $page = 'confirm';
+if( isset( $_GET['m'] ) && $_GET['m'] == 'login' ) $page = 'login';
+if( isset( $_GET['m'] ) && $_GET['m'] == 'panel' ) $page = 'panel';
+if( isset( $_GET['m'] ) && $_GET['m'] == 'logout' ) $page = 'logout';
+
+
 include( $template_url.'pages/'.$page.'.php' );
 ?>
 
 
-    </div>
+
+
+		</div>
 
 	</body>
 </html>

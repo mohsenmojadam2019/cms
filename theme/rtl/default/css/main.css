@@ -2,83 +2,55 @@
 @import url(fontiran.css);
 @import url(bootstrap.min.css);
 
-html {
+html{
 	direction: rtl;
 	font-size: 100%;
 }
-
-body,
-h1,
-h2,
-h3,
-h4,
-span,
-div,
-label,
-input,
-select,
-textarea,
-button,
-td {
+body, h1, h2, h3, h4, span, div, label, input, select, textarea, button, td{
 	font-family: IRANSans;
 }
-
-body {
+body{
 	overflow-x: hidden;
 	width: 100%;
 	background: #f5f5f5;
 	color: #686868;
 }
-
-h1 {
+h1{
 	font-size: 3em;
 }
-
-h2 {
+h2{
 	font-size: 1.75em;
 }
-
-h3 {
+h3{
 	font-size: 1.3em;
 }
-
-h4 {
+h4{
 	font-size: 1.15em;
 	display: inline-block;
 }
-
-th,
-td {
+th, td{
 	text-align: center;
 }
-
-.animated {
+.animated{
 	animation-duration: 1.3s !important;
 	animation-delay: 0s !important;
 }
-
-a:hover,
-a,
-a:focus {
+a:hover, a, a:focus{
 	text-decoration: none;
 }
-
-a,
-li {
+a, li{
 	transition: all 0.2s;
 	color: #000;
 }
-
 .clearfix {
-	clear: both;
-	zoom: 1;
+    clear: both;
+    zoom: 1;
 }
 
-body .container>header {
+body .container > header{
 	padding: 15px 0;
 }
-
-#logo {
+#logo{
 	font-size: 24px;
 	font-weight: bold;
 	border: 1px solid #444;
@@ -90,8 +62,7 @@ body .container>header {
 	display: inline-block;
 	margin-top: 15px;
 }
-
-.search-form {
+.search-form{
 	display: inline-block;
 	border: 1px solid #444;
 	-webkit-border-radius: 5px;
@@ -99,8 +70,7 @@ body .container>header {
 	border-radius: 5px;
 	padding: 15px;
 }
-
-.search-form input[name='key'] {
+.search-form input[name='key']{
 	border: 1px solid #444;
 	border-left: 0;
 	-webkit-border-radius: 0 5px 5px 0;
@@ -108,8 +78,7 @@ body .container>header {
 	border-radius: 0 5px 5px 0;
 	padding: 5px 10px;
 }
-
-#search-btn {
+#search-btn{
 	border: 1px solid #444;
 	-webkit-border-radius: 5px 0 0 5px;
 	-moz-border-radius: 5px 0 0 5px;
@@ -118,27 +87,21 @@ body .container>header {
 	display: inline-block;
 	padding: 5px;
 }
-
-.logo-section {
+.logo-section{
 	padding-bottom: 15px;
 }
 
-.navbar-brand,
-.navbar-header,
-.navbar-nav>li {
+.navbar-brand, .navbar-header, .navbar-nav>li{
 	float: right;
 }
-
-.navbar-collapse.collapse {
+.navbar-collapse.collapse{
 	float: left;
 }
-
-.main-menu-ul,
-.navbar-collapse.collapse {
+.main-menu-ul,.navbar-collapse.collapse{
 	width: 100%;
 }
 
-.cats {
+.cats{
 	display: block;
 	background: #fff;
 	border: 1px solid #eaeaea;
@@ -147,36 +110,30 @@ body .container>header {
 	border-radius: 5px;
 	box-shadow: 10px 10px 5px #444;
 }
-
-.cats_childs {
+.cats_childs{
 	display: none;
 }
-
-.cats li {
+.cats li{
 	display: block;
 	padding: 10px 15px;
 	border-bottom: 1px solid #eaeaea;
 }
-
-.cats li:last-child {
+.cats li:last-child{
 	border-bottom: 0;
 }
-
-.cats li:hover {
+.cats li:hover{
 	padding-right: 25px;
 	background-color: #eaeaea;
 }
-
-.cats li a {
+.cats li a{
 	color: #444;
 }
-
-.cats li:hover a {
+.cats li:hover a{
 	color: #000;
 }
 
 
-.product {
+.product{
 	border: 1px solid #eaeaea;
 	background-color: #fff;
 	-webkit-border-radius: 5px;
@@ -185,26 +142,24 @@ body .container>header {
 	margin-bottom: 15px;
 }
 
-.product a>img {
+.product a > img{
 	-webkit-border-radius: 5px 5px 0 0;
 	-moz-border-radius: 5px 5px 0 0;
 	border-radius: 5px 5px 0 0;
 	margin-bottom: 15px;
 	max-height: 166px;
 }
-
-.product-title {
+.product-title{
 	font-weight: bold;
 	display: block;
 }
-
-.product-price {
+.product-price{
 	color: #3d3d3d;
 	display: block;
 	margin: 5px auto 15px;
 }
 
-.add-to-basket {
+.add-to-basket{
 	background: #27AE60;
 	color: #fff;
 	-webkit-border-radius: 5px;
@@ -212,24 +167,21 @@ body .container>header {
 	border-radius: 5px;
 	padding: 5px 15px;
 }
-
-.btns {
+.btns{
 	padding: 15px 0;
 }
-
-.add-to-basket:hover {
+.add-to-basket:hover{
 	background: #58D68D;
 	color: #fff;
 }
-
-.count {
+.count{
 	border: 1px solid #444;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
 }
 
-.desc {
+.desc{
 	border: 1px solid #eaeaea;
 	background: #fff;
 	color: #444;
@@ -240,26 +192,39 @@ body .container>header {
 	padding: 15px;
 }
 
-.forms ul li {
+.forms ul li{
 	display: block;
 	margin-bottom: 10px;
 }
-
-.forms label {
+.forms label{
 	display: inline-block;
 	width: 130px;
 }
-
 .forms input[type='text'],
-.forms input[type='password'] {
+.forms input[type='password']{
 	border: 1px solid #444;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
-
+	
 }
-
-.forms input[type='button'] {
+.forms input[type='button']{
 	padding: 5px 15px;
 	border: 1px solid #444;
+}
+
+.thumbs ul li{
+	width: 25%;
+	display: inline-block;
+	float: left;
+	padding: 5px;
+}
+.thumbs ul li img{
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.count{
+	max-width: 50px;
 }

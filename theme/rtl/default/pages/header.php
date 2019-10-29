@@ -12,9 +12,9 @@
 		
 			<div class="col-xs-12 col-md-6 pull-right">
 			
-				<form class="pull-left search-form">
+				<form id="search-form" class="pull-left search-form" method="POST" action="./?m=search">
 				
-					<input type="hidden" name="action" value="serach" />
+					<input type="hidden" name="action" value="search" />
 					<input type="text" placeholder="جستجو ..." name="key" />
 					<a href="javascript: void(0);" id="search-btn">
 						<i class="fa fa-search"></i>
